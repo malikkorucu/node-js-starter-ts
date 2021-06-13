@@ -1,0 +1,74 @@
+{
+  "type": "commonjs",
+  "name": "node-js-starter",
+  "version": "1.0.0",
+  "description": "\"# node-js-starter-ts\"",
+  "main": "index.ts",
+  "scripts": {
+    "start": "nps",
+    "build": "npm start build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.ts "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malikkorucu/node-js-starter-ts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malikkorucu/node-js-starter-ts/issues"
+  },
+  "homepage": "https://github.com/malikkorucu/node-js-starter-ts#readme",
+  "dependencies": {
+    "@types/node": "^15.12.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.1",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
+    "commander": "^7.2.0",
+    "copyfiles": "^2.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "figlet": "^1.5.0",
+    "jsonfile": "^6.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.4",
+    "mongoose-regex-search": "^0.8.30",
+    "multer": "^1.4.2",
+    "nps": "^5.10.0",
+    "nps-utils": "^1.7.0",
+    "reflect-metadata": "^0.1.13",
+    "routing-controllers": "^0.9.0",
+    "socket.io": "^2.3.0",
+    "ts-node": "^10.0.0",
+    "tslib": "^2.3.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.3.2"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/test/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "testEnvironment": "node",
+    "setupTestFrameworkScriptFile": "./test/unit/lib/setup.ts"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.12",
+    "@types/multer": "^1.4.5",
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.7"
+  }
+}
