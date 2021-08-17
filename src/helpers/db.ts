@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const connectDatabase = () => {
   mongoose
@@ -10,7 +10,7 @@ const connectDatabase = () => {
       useUnifiedTopology: true,
     })
     .then(() => {
-      console.log("mongo db baglantısı başarılı");
+      console.log('mongo db baglantısı başarılı');
     })
     .catch((err) => {
       console.log(err);
