@@ -10,9 +10,11 @@ import {
   Put,
   Delete,
   UseBefore,
-} from 'routing-controllers';
+ } from 'routing-controllers';
 import {Response} from 'express';
 import { TestMiddleware } from '../middlewares/TestMiddleware';
+
+// @JsonController Eğer bu şekilde yapılırsa class sadece JSON dosya dönebilir...
 
 @Controller()
 export class UserController {

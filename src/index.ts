@@ -14,6 +14,9 @@ const app = createExpressServer({
   middlewares: [AuthenticationMiddleware],
 });
 
+// controllers: [path.join(__dirname + '/controllers/*.js')], bu şekilde createExpress
+// fonksiyonunun aldığı obje parametresi bütün controllerları tek satırda init ediyor.
+
 connectDatabase();
 
 app.use(express.json());
